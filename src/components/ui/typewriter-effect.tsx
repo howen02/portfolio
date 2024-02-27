@@ -187,3 +187,23 @@ export const TypewriterEffectSmooth = ({
         </div>
     );
 };
+
+export function TypewriterEffectSmoothHello() {
+    const words = [
+        {
+            text: "Hi,",
+        },
+        {
+            text: "I'm",
+        },
+        {
+            text: "Howen.",
+            className: "text-blue-500 dark:text-blue-500",
+        },
+    ];
+    return (
+        <div className="flex flex-col items-center justify-center h-[40rem]  ">
+            <TypewriterEffectSmooth words={words} />
+        </div>
+    );
+}

@@ -4,7 +4,7 @@ import React from "react";
 const Images = () => {
     const length = 300;
     return (
-        <div className="flex justify-center mt-6">
+        <div className="flex space-x-10 justify-center my-10">
             <Image
                 src={"/naru.png"}
                 alt="naru"
