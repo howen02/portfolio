@@ -1,9 +1,9 @@
 "use client";
 
-import Intro from "components/ui/intro";
+import Intro from "src/components/ui/intro";
 import React from "react";
-import Images from "components/ui/images";
-import Card from "components/ui/card";
+import Images from "src/components/ui/images";
+import Card from "src/components/ui/card";
 
 export default function Home() {
     return (
