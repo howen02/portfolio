@@ -1,13 +1,15 @@
+"use client";
+
+import React from "react";
+
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <div className="pt-5 absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
-                <div className="pl-5 flex items-center">
-                    <h1 className="text-center font-bold text-6xl">
-                        Hi, I'm Howen
-                    </h1>
-                </div>
+        <div className=" w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+            <div className="h-[50rem]">
+                <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text bg-gradient-to-b py-8">
+                    Hi, I'm <span className="text-blue-500">Howen</span>
+                </p>
             </div>
-        </main>
+        </div>
     );
 }
