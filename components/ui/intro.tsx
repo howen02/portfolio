@@ -2,9 +2,9 @@ import React from "react";
 
 const Intro = () => {
     return (
-        <div className="rounded-lg bg-white m-60 p-10 border-black border-2">
-            <div className="">
-                <h2 className="text-4xl font-bold">Who am I?</h2>
+        <div className="rounded-lg bg-white p-10 border-black border-2">
+            <div className="p-4 m-4">
+                <span className="font-bold">Who am I?</span>
                 <p>
                     I'm currently a second-year Computer Science student
                     studying at the National University of Singapore.
