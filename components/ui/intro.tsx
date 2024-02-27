@@ -6,7 +6,7 @@ const Intro = () => {
             <div className="p-4 m-4">
                 <span className="font-bold">Who am I?</span>
                 <p>
-                    I'm currently a second-year Computer Science student
+                    I m currently a second-year Computer Science student
                     studying at the National University of Singapore.
                 </p>
                 <p>
