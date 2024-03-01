@@ -1,18 +1,17 @@
 import React from "react";
-
+import { Card, CardBody, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 const Intro = () => {
-    const length = 400;
-
+    const imageSize = 350;
     return (
         <div className="h-screen justify-center align-center pt-14">
-            <div className="flex justify-center">
-                <div className="rounded-lg bg-white p-4 border-black border-2 w-2/4">
-                    <div className="mb-4">
-                        <span className="text-4xl font-bold">Who am I?</span>
-                    </div>
-                    <p>
+            <Card className="flex flex-col justify-center mx-auto w-3/5">
+                <CardBody>
+                    <Text className="text-4xl font-bold">
+                        A little bit about me
+                    </Text>
+                    <Text className="mt-3">
                         I'm currently in my second year pursuing a Bachelor's
                         degree in Computer Science at the National University of
                         Singapore. Furthermore, I'm actively engaged in
@@ -37,31 +36,30 @@ const Intro = () => {
                         technologies, particularly exploring Decentralized
                         Finance (DeFi) protocols and their potential
                         applications. Here are some of the NFTs (Non-fungible
-                        tokens) I've collected so far!
-                    </p>
-                </div>
-            </div>
-
-            <div className="flex space-x-10 justify-center my-20">
+                        tokens) I've collected so far! 👇🏻
+                    </Text>
+                </CardBody>
+            </Card>
+            <div className="flex xs:flex-col justify-center space-x-12 mt-10">
                 <Image
                     src={"/naru.png"}
-                    alt="naru"
-                    width={length}
-                    height={length}
+                    alt={"naru"}
+                    width={imageSize}
+                    height={imageSize}
                     className="rounded-lg"
                 />
                 <Image
                     src={"/ore.png"}
-                    alt="naru"
-                    width={length}
-                    height={length}
+                    alt={"ore"}
+                    width={imageSize}
+                    height={imageSize}
                     className="rounded-lg"
                 />
                 <Image
                     src={"/tgt.gif"}
-                    alt="naru"
-                    width={length}
-                    height={length}
+                    alt={"crystal hand"}
+                    width={imageSize}
+                    height={imageSize}
                     className="rounded-lg"
                 />
             </div>

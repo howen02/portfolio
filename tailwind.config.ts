@@ -1,8 +1,7 @@
+import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
 
-const defaultTheme = require("tailwindcss/defaultTheme");
 const svgToDataUri = require("mini-svg-data-uri");
-const colors = require("tailwindcss/colors");
 
 const {
     default: flattenColorPalette,
@@ -10,12 +9,17 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{ts,tsx}"],
+    content: [
+        "./src/**/*.{ts,tsx}",
+        "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    ],
     darkMode: "class",
     theme: {
         // rest of the code
     },
     plugins: [
+        [require("daisyui")],
+        [nextui()],
         addVariablesForColors,
         function ({ matchUtilities, theme }: any) {
             matchUtilities(

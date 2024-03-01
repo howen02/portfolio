@@ -68,6 +68,7 @@ export const TypewriterEffect = ({
             </motion.div>
         );
     };
+
     return (
         <div
             className={cn(
@@ -89,7 +90,7 @@ export const TypewriterEffect = ({
                     repeatType: "reverse",
                 }}
                 className={cn(
-                    "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500",
+                    "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-sky-500",
                     cursorClassName
                 )}
             ></motion.span>
@@ -158,7 +159,8 @@ export const TypewriterEffectSmooth = ({
                 }}
             >
                 <div
-                    className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl font-bold"
+                    // className="text-xs sm:text-base md:text-xl lg:text-3xl xl:text-5xl font-bold"
+                    className="text-5xl sm:text-3xl font-bold"
                     style={{
                         whiteSpace: "nowrap",
                     }}
@@ -188,22 +190,25 @@ export const TypewriterEffectSmooth = ({
     );
 };
 
-export function TypewriterEffectSmoothHello() {
+export function NameTypeWriterEffect() {
     const words = [
         {
-            text: "Hi,",
+            text: "Hey",
+        },
+        {
+            text: "there,",
         },
         {
             text: "I'm",
         },
         {
             text: "Howen.",
-            className: "text-blue-500 dark:text-blue-500",
+            className: "text-sky-500",
         },
     ];
     return (
-        <div className="flex flex-col items-center justify-center h-screen  ">
-            <TypewriterEffectSmooth words={words} />
+        <div className="flex flex-col items-center justify-center h-screen">
+            <TypewriterEffect words={words} />
         </div>
     );
 }
