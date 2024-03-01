@@ -33,10 +33,10 @@ const Projects = () => {
 
     return (
         <div className="h-screen flex flex-col justify-center items-center mx-10">
-            <p className="text-4xl">
+            <div className="text-4xl font-bold bg-white rounded-lg px-5 py-5">
                 I love building in my spare time, here are some projects I've
                 made
-            </p>
+            </div>
             <HoverEffect items={projects} className="text-4xl" />
         </div>
     );
