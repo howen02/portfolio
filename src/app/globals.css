@@ -40,3 +40,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.highlight-text {
+  @apply text-sky-500 font-bold;
+}

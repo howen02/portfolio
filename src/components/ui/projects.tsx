@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { HoverEffect } from "./card-hover-effect";
 
@@ -32,11 +34,11 @@ const Projects = () => {
     ];
 
     return (
-        <div className="h-screen flex flex-col justify-center items-center mx-10">
-            <div className="text-4xl font-bold bg-white rounded-lg px-5 py-5">
+        <div className="flex flex-col justify-center items-center mx-10 mt-10">
+            <h2 className="text-4xl font-bold bg-white rounded-lg px-5 py-5">
                 I love building in my spare time, here are some projects I've
                 made
-            </div>
+            </h2>
             <HoverEffect items={projects} className="text-4xl" />
         </div>
     );
