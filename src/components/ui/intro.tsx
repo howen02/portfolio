@@ -79,7 +79,7 @@ const Intro = () => {
                             width={imageSize}
                             height={imageSize}
                             layout="responsive"
-                            className="rounded-lg mb-0"
+                            className="rounded-lg mb-12 lg:mb-0"
                         />
                     </div>
                     <div className="w-full lg:w-1/3">
@@ -89,7 +89,7 @@ const Intro = () => {
                             width={imageSize}
                             height={imageSize}
                             layout="responsive"
-                            className="rounded-lg mb-0"
+                            className="rounded-lg mb-12 lg:mb-0"
                         />
                     </div>
                 </div>
