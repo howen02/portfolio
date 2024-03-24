@@ -50,6 +50,15 @@ const Footer = () => {
                                 <TagLabel>Email</TagLabel>
                             </Tag>
                         </Link>
+                        <Link href={""} target="_blank">
+                            <Tag
+                                size={"lg"}
+                                variant="outline"
+                                colorScheme="white"
+                            >
+                                <TagLabel>Resume</TagLabel>
+                            </Tag>
+                        </Link>
                     </HStack>
                 </footer>
             </div>
