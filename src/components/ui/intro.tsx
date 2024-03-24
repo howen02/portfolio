@@ -52,7 +52,7 @@ const Intro = () => {
                     </CardBody>
                 </Card>
                 <div className="flex flex-col lg:flex-row justify-center items-center space-x-0 lg:space-x-12 mt-10 w-full">
-                    <div className="w-full lg:w-1/3 px-4">
+                    <div className="w-full lg:w-1/3">
                         <Image
                             src={"/naru.png"}
                             alt={"naru"}
@@ -62,7 +62,7 @@ const Intro = () => {
                             className="rounded-lg mb-12 lg:mb-0"
                         />
                     </div>
-                    <div className="w-full lg:w-1/3 px-4">
+                    <div className="w-full lg:w-1/3 ">
                         <Image
                             src={"/ore.png"}
                             alt={"ore"}
@@ -72,10 +72,20 @@ const Intro = () => {
                             className="rounded-lg mb-12 lg:mb-0"
                         />
                     </div>
-                    <div className="w-full lg:w-1/3 px-4">
+                    <div className="w-full lg:w-1/3">
                         <Image
                             src={"/tgt.gif"}
                             alt={"crystal hand"}
+                            width={imageSize}
+                            height={imageSize}
+                            layout="responsive"
+                            className="rounded-lg mb-0"
+                        />
+                    </div>
+                    <div className="w-full lg:w-1/3">
+                        <Image
+                            src={"/cubs.png"}
+                            alt={"cub"}
                             width={imageSize}
                             height={imageSize}
                             layout="responsive"
