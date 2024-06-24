@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <div className="flex justify-center pb-4 w-full">
-            <div className="bg-white w-3/4 rounded-lg flex flex-col items-center py-4">
+        <div className="flex justify-center pb-4">
+            <div className="bg-white rounded-lg flex flex-col items-center py-4 w-full">
                 <p className="text-2xl font-semibold text-black">
                     Built by Howen, 2024
                 </p>
